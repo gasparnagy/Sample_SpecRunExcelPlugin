@@ -131,14 +131,14 @@ this.ScenarioSetup(scenarioInfo);
 #line 27
  testRunner.Then(string.Format("the monthly net salary of the employee should be {0}", net), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-            TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                         "Social Security Contributions",
                         "Income Tax"});
-            table2.AddRow(new string[] {
+            table1.AddRow(new string[] {
                         string.Format("{0}", contributions),
                         string.Format("{0}", incomeTax)});
 #line 28
- testRunner.And("the following taxes are paid by the employee", ((string)(null)), table2, "And ");
+ testRunner.And("the following taxes are paid by the employee", ((string)(null)), table1, "And ");
 #line hidden
             this.ScenarioCleanup();
         }
