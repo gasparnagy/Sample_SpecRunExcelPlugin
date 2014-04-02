@@ -10,7 +10,7 @@
 # ------------------------------------------------------------------------------
 
 @excel-gherkin 
-Feature: Tax Calculation (Excel Feature)
+Feature: Tax Calculation (SpecFlow.Plus.Excel)
 
 Scenario: Emplyee without children
 	Given the monthly gross salary of the employee is 200000

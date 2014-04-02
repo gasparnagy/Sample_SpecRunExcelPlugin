@@ -51,11 +51,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TaxCalculation_ExcelExamples.feature.cs">
-      <DependentUpon>TaxCalculation_ExcelExamples.feature</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <Compile Include="TaxCalculation_Gherkin.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -77,11 +72,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="TaxCalculation_ExcelExamples.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>TaxCalculation_ExcelExamples.feature.cs</LastGenOutput>
-    </None>
-    <Content Include="TaxCalculation_ExcelExamples.xlsx" />
     <None Include="TaxCalculation_ExcelFeature.feature">
       <DependentUpon>TaxCalculation_ExcelFeature.feature.xlsx</DependentUpon>
       <AutoGen>True</AutoGen>
