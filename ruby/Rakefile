@@ -1,0 +1,15 @@
+# encoding: utf-8
+
+require 'cucumber/rake/task'
+
+Cucumber::Rake::Task.new('cucumber') do |t|
+	t.cucumber_opts = %w{--format progress}
+end
+
+task default: ['features/TaxCalculation_ExcelFeature.feature', 'cucumber']
+
+file "features/TaxCalculation_ExcelFeature.feature" => ["../src/TaxCalculator.Specs/TaxCalculation_ExcelFeature.feature.xlsx", "../src/packages/SpecRun.Excel.1.1.0/tools/SpecRun.Excel.Converter.exe"] do |t|
+  converter = t.prerequisites.find {|p| p =~ /\.exe$/}
+  excel = t.prerequisites.find {|p| p =~ /\.xlsx/}
+  sh "#{converter} #{excel} #{t.name}"
+end
