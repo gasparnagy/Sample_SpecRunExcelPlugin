@@ -42,18 +42,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 15);
+            this.label1.Location = new System.Drawing.Point(18, 23);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 13);
+            this.label1.Size = new System.Drawing.Size(109, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Monthly salary";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 45);
+            this.label2.Location = new System.Drawing.Point(18, 69);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 13);
+            this.label2.Size = new System.Drawing.Size(67, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Children";
             // 
@@ -62,14 +64,15 @@
             this.salaryUpDown.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.salaryUpDown.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.salaryUpDown.Location = new System.Drawing.Point(107, 13);
+            this.salaryUpDown.Location = new System.Drawing.Point(160, 20);
+            this.salaryUpDown.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.salaryUpDown.Maximum = new decimal(new int[] {
             10000000,
             0,
             0,
             0});
             this.salaryUpDown.Name = "salaryUpDown";
-            this.salaryUpDown.Size = new System.Drawing.Size(273, 20);
+            this.salaryUpDown.Size = new System.Drawing.Size(300, 26);
             this.salaryUpDown.TabIndex = 2;
             this.salaryUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.salaryUpDown.ThousandsSeparator = true;
@@ -84,18 +87,20 @@
             this.childrenUpDown.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.childrenUpDown.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.childrenUpDown.Location = new System.Drawing.Point(107, 43);
+            this.childrenUpDown.Location = new System.Drawing.Point(160, 66);
+            this.childrenUpDown.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.childrenUpDown.Name = "childrenUpDown";
-            this.childrenUpDown.Size = new System.Drawing.Size(273, 20);
+            this.childrenUpDown.Size = new System.Drawing.Size(300, 26);
             this.childrenUpDown.TabIndex = 3;
             this.childrenUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(385, 15);
+            this.label3.Location = new System.Drawing.Point(578, 23);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(16, 13);
+            this.label3.Size = new System.Drawing.Size(24, 20);
             this.label3.TabIndex = 4;
             this.label3.Text = "Ft";
             // 
@@ -105,9 +110,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.calculateButton.BackColor = System.Drawing.Color.MediumSpringGreen;
             this.calculateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.calculateButton.Location = new System.Drawing.Point(85, 83);
+            this.calculateButton.Location = new System.Drawing.Point(128, 128);
+            this.calculateButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.calculateButton.Name = "calculateButton";
-            this.calculateButton.Size = new System.Drawing.Size(240, 33);
+            this.calculateButton.Size = new System.Drawing.Size(250, 51);
             this.calculateButton.TabIndex = 5;
             this.calculateButton.Text = "Calculate";
             this.calculateButton.UseVisualStyleBackColor = false;
@@ -119,17 +125,18 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.resultTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.resultTextBox.Location = new System.Drawing.Point(12, 135);
+            this.resultTextBox.Location = new System.Drawing.Point(18, 208);
+            this.resultTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.resultTextBox.Multiline = true;
             this.resultTextBox.Name = "resultTextBox";
-            this.resultTextBox.Size = new System.Drawing.Size(385, 114);
+            this.resultTextBox.Size = new System.Drawing.Size(466, 135);
             this.resultTextBox.TabIndex = 6;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(409, 261);
+            this.ClientSize = new System.Drawing.Size(504, 363);
             this.Controls.Add(this.resultTextBox);
             this.Controls.Add(this.calculateButton);
             this.Controls.Add(this.label3);
@@ -137,6 +144,8 @@
             this.Controls.Add(this.salaryUpDown);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "My Tax Calculator";
             ((System.ComponentModel.ISupportInitialize)(this.salaryUpDown)).EndInit();
